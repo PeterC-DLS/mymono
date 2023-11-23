@@ -4,8 +4,10 @@
   "version": "0.1.0",
   "packageManager": "pnpm@8.6.0",
   "scripts": {
-    "start": "pnpm --filter {client/example} start",
-    "packages": "pnpm --filter {client/*} build"
+    "start": "pnpm --filter client/example start",
+    "packages": "pnpm --filter {client/*} build",
+    "start:storybook": "pnpm --filter storybook start",
+    "build:storybook": "pnpm --filter storybook build"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.48.1",
