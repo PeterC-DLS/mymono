@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "packageManager": "pnpm@8.6.0",
   "scripts": {
-    "start": "pnpm --filter client/example start",
+    "start": "pnpm --filter {client/example} start",
     "packages": "pnpm --filter {client/*} build",
     "start:storybook": "pnpm --filter storybook start",
     "build:storybook": "pnpm --filter storybook build"
