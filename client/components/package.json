@@ -11,8 +11,11 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "publishConfig": {
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
