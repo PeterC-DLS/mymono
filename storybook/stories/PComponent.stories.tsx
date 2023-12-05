@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react';
 import { useState } from 'react';
 
 import { PComponent, PComponentProps } from '@peter/components';

@@ -13,7 +13,6 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es'],
-      sourcemap: true,
       fileName: 'index'
     },
   },

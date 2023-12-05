@@ -4,23 +4,15 @@
   "version": "0.1.0",
   "packageManager": "pnpm@8.6.0",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "start": "pnpm --filter {client/example} start",
     "packages": "pnpm --filter {client/*} build",
     "start:storybook": "pnpm --filter storybook start",
-    "build:storybook": "pnpm --filter storybook build"
+    "build:storybook": "pnpm --filter storybook build",
+    "lint": "pnpm --filter {client/*} lint",
+    "lint:tsc": "pnpm tsc"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.48.1",
-    "@typescript-eslint/parser": "^5.48.1",
-    "@vitejs/plugin-react": "^4.1.1",
-    "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.8.2",
-    "typescript": "^5.1.3",
-    "vite": "^4.5.0",
-    "vitest": "^0.34.6"
+    "typescript": "^5.2.2"
   }
 }
