@@ -1,10 +1,10 @@
-import type { StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 
 import { PComponent, PComponentProps } from '@peter/components';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta = {
+const meta: Meta<typeof PComponent> = {
   title: 'Example/Button',
   component: PComponent,
   parameters: {
@@ -20,7 +20,7 @@ const meta = {
 };
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof PComponent>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Static: Story = {

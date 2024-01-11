@@ -6,13 +6,24 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "start": "pnpm --filter {client/example} start",
-    "packages": "pnpm --filter {client/*} build",
+    "build": "pnpm --filter {client/*} build",
     "start:storybook": "pnpm --filter storybook start",
     "build:storybook": "pnpm --filter storybook build",
-    "lint": "pnpm --filter {client/*} lint",
-    "lint:tsc": "pnpm tsc"
+    "lint": "eslint client --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:tsc": "pnpm tsc",
+    "prettify": "prettier -w .",
+    "docs": "pnpm --filter {client/components} docs"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "eslint-plugin-storybook": "^0.6.15",
     "typescript": "^5.2.2"
   }
 }

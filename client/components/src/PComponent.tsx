@@ -1,6 +1,13 @@
 
+/** This is the props for PComponent
+ * @prop text some text
+ * @prop handleClick callback for click
+ * @interface 
+ */
 interface PComponentProps {
+  /** This is some text */
   text: string;
+  /** Callback to handle click */
   handleClick: () => void;
 }
 

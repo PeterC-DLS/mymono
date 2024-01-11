@@ -1,0 +1,18 @@
+import { Canvas, Markdown, Meta } from '@storybook/blocks';
+
+import * as PComponentStories from './PComponent.stories';
+
+import PComponentDocs from '../../docs/interfaces/PComponentProps.md?raw';
+
+<Meta of={PComponentStories} />
+
+# Markdown version of PComponent
+
+Hello world
+
+<Canvas of={PComponentStories.Dynamic} />
+
+
+# TypeDoc
+
+<Markdown>{PComponentDocs}</Markdown>
