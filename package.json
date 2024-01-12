@@ -8,7 +8,7 @@
     "start": "pnpm --filter {client/example} start",
     "build": "pnpm --filter {client/*} build",
     "start:storybook": "pnpm --filter storybook start",
-    "build:storybook": "pnpm --filter storybook build",
+    "build:storybook": "pnpm --filter storybook build && pnpx cpy-cli typedocs/index.html storybook/storybook-static/",
     "lint": "eslint client --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:tsc": "pnpm tsc",
     "prettify": "prettier -w .",
